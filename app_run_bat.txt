@@ -1,0 +1,15 @@
+@echo off
+REM Get the directory where this batch file is located
+set APP_DIR=%~dp0
+
+REM Remove trailing backslash (optional but safer)
+set APP_DIR=%APP_DIR:~0,-1%
+
+REM Activate virtual environment
+call "%APP_DIR%\venv\Scripts\activate.bat"
+
+REM Run Streamlit app
+streamlit run "%APP_DIR%\app.py"
+
+REM Optional: keep window open if Streamlit exits
+pause
