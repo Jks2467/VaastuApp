@@ -1,0 +1,6 @@
+pillow
+streamlit
+pandas
+pdfplumber
+langchain
+langchain-openai
